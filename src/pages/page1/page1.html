@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar colour="primary">
+
+    <ion-title>People</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+<ion-content padding>
+  <h3>REGISTRATION </h3>
+  <ion-list>
+    <ion-item>
+
+      <ion-input placeholder="First Name" type="text" name="firstName" [(ngModel)]="data.firstName"></ion-input>
+
+    </ion-item>
+    <ion-item>
+
+      <ion-input placeholder="Last Name" type="text" name="lastName" [(ngModel)]="data.lastName"></ion-input>
+
+    </ion-item>
+    <ion-item>
+
+      <ion-input placeholder="Phone" type="phonenumber" name="phoneNumber" [(ngModel)]="data.phoneNumber"></ion-input>
+
+    </ion-item>
+    <ion-item>
+
+      <ion-input placeholder="Email" type="email" name="email" [(ngModel)]="data.email"></ion-input>
+
+    </ion-item>
+    <ion-item>
+
+      <ion-input placeholder="Password" type="password" name="password" [(ngModel)]="data.password"></ion-input>
+
+    </ion-item>
+
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button block (click)="submit()" color="primary">Regiseter</button>
+    <button ion-button block (click)="goToLogin()" color="primary">login</button>
+
+  </div>
+</ion-content>

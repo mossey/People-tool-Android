@@ -1,0 +1,12 @@
+{
+  "name": "peopleAndroid",
+  "app_id": "",
+  "v2": true,
+  "typescript": true,
+  "proxies": [
+    {
+      "path": "/v1",
+      "proxyUrl": "https://api.instagram.com/v1"
+    }
+  ]
+}

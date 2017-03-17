@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar colour="primary">
+
+    <ion-title>People</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>email</ion-label>
+      <ion-input type="email" [(ngModel)]="email" (ngModelChange)="emailChange($event)"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password" (ngModelChange)="passwordChange($event)"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button block (click)="submit()"  color="primary">Login</button>
+  </div>
+
+</ion-content>

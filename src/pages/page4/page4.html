@@ -1,0 +1,44 @@
+<!--
+  Generated template for the Page4 page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Page4</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>First name</ion-label>
+      <ion-input type="text"  [(ngModel)]="firstName" (ngModelChange)="firstNameChange($event)"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Last Name</ion-label>
+      <ion-input type="text"   [(ngModel)]="lastName" (ngModelChange)="lastNameChange($event)"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="text"   [(ngModel)]="email" (ngModelChange)="emailChange($event)"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Phone Number</ion-label>
+      <ion-input  type="text" [(ngModel)]="phoneNumber" (ngModelChange)="phoneNumberChange($event)"></ion-input>
+    </ion-item>
+
+    <button ion-button block (click)="update()" color="primary">Update record</button>
+
+
+
+  </ion-list>
+
+
+
+</ion-content>
