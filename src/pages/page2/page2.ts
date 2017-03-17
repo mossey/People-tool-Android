@@ -25,7 +25,7 @@ export class Page2 {
   }
   submit(){
 
-    var link = 'http://localhost:8000/api/authenticate';
+    var link = 'http://stark-taiga-86375.herokuapp.com/api/authenticate';
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
 
@@ -53,7 +53,7 @@ export class Page2 {
         if(JSON.stringify(data.json())=='false'){
           alert('wrong credentials')
         }
-        if(data.json().userType=='admin'){
+        if(data.json().userType=='Administrator'){
           this.navCtrl.push(Page3);
 
         }

@@ -40,7 +40,7 @@ export class Page3 {
 
     this.posts = null;
 
-    this.http.get('http://127.0.0.1:8000/read').map(res => res.json()).subscribe(data => {
+    this.http.get('http://stark-taiga-86375.herokuapp.com/read').map(res => res.json()).subscribe(data => {
       this.posts = data;
       console.log(JSON.stringify(data));
     });
@@ -66,7 +66,7 @@ export class Page3 {
     this.post.id=value;
 
 
-    var link = 'http://localhost:8000/delete/'+this.post.id;
+    var link = 'http://stark-taiga-86375.herokuapp.com/delete/'+this.post.id;
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
 
@@ -106,7 +106,7 @@ export class Page3 {
     this.post.id=value;
 
 
-    var link = 'http://localhost:8000/api/users/update/administrator/'+this.post.id;
+    var link = 'http://stark-taiga-86375.herokuapp.com/api/users/update/administrator/'+this.post.id;
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
 
@@ -136,7 +136,7 @@ export class Page3 {
     this.post.id=value;
 
 
-    var link = 'http://localhost:8000/api/users/update/basicUser/'+this.post.id;
+    var link = 'http://stark-taiga-86375.herokuapp.com/api/users/update/basicUser/'+this.post.id;
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
 
@@ -164,7 +164,7 @@ export class Page3 {
     this.post.id=value;
 
 
-    var link = 'http://localhost:8000/api/users/update/dataClerk/'+this.post.id;
+    var link = 'http://stark-taiga-86375.herokuapp.com/api/users/update/dataClerk/'+this.post.id;
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
 

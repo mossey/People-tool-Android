@@ -55,7 +55,7 @@ export class Page1 {
 
 
 
- var link = 'http://localhost:8000/api/registration';
+ var link = 'http://stark-taiga-86375.herokuapp.com/api/registration';
  let headers = new Headers({ 'Content-Type': 'application/json' });
  let options = new RequestOptions({ headers: headers });
 
